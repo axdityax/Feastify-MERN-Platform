@@ -16,5 +16,6 @@ const upload = multer({ storage: storage });
 
 foodRouter.post("/add", upload.single("image"), addFood); //we use this middleware on route
 foodRouter.get("/list", listFood);
-foodRouter.get("/remove", removeFood);
+foodRouter.post("/remove", removeFood);
 export default foodRouter;
+	
