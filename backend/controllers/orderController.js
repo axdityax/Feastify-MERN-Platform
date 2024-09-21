@@ -5,7 +5,7 @@ import Stripe from "stripe";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 const placeOrder = async (req, res) => {
-	const frontend_URL = "https://feastify-frontend-ip1a.onrender.com/";
+	const frontend_URL = "https://feastify-frontend-ip1a.onrender.com";
 
 	try {
 		const newOrder = new orderModel({
