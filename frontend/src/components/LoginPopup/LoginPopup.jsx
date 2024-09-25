@@ -11,7 +11,7 @@ const LoginPopup = ({ setShowLogin }) => {
 		password: "",
 		name: "",
 	});
-	const [loading, setLoading] = useState(false); // Loading state for API call
+	const [loading, setLoading] = useState(false);
 
 	const { url, setToken } = useContext(StoreContext);
 
